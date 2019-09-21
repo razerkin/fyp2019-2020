@@ -1,6 +1,6 @@
 Discussion Summary:
 First meeting
-matched the fyp project : Design of Secure Non-orthogonal Multiple Access Transmission in Wireless Network
+matched the fyp project : Design of Efficient Mobile Edge Computing in Wireless Network
 
 discuss the general direction and how to do the work at these two semesters.
 

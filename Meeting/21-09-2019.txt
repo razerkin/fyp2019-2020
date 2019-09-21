@@ -1,0 +1,11 @@
+Discussion Summary:
+Second meeting
+
+discuss the work about next two week;
+
+
+
+Next meeting targets:
+1. Read two paper in next two week: Edge Computing Vision and Challenges;Mobile Edge Computing A Survey
+
+2. know the keyword and answer the question about what is MEC and what is the benifit of MEC
