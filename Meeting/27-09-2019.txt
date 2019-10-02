@@ -1,0 +1,25 @@
+Date: 2019-09-27
+
+Member:
+Kin
+Prof. Wu
+
+
+Discussion Summary:
+Third meeting
+Report the work at last week:
+1.Read the "Edge Computing Vision and Challenges" and understood some items about EC.
+
+Discuss the work about next two week:
+1.Read the "Mobile Edge Computing A Survey" at next week.
+2.Write a table for pre-review / Reference of the paper that have read before.
+
+
+
+
+Next meeting targets:
+1. Reprot some new knowledge from "Mobile Edge Computing A Survey"
+
+2. Find some interesting applications about MEC.
+
+3. Talk about next two paper.
