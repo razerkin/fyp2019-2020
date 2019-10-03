@@ -1,0 +1,21 @@
+Date: 2019-10-04
+
+Member:
+Kin
+Prof. Wu
+
+
+Discussion Summary:
+Fourth meeting
+
+Brief some formula/parameter in MEC question, about time for data transferring , compuation, workload... 
+
+Discuss the work about next two week:
+1.Read the "A Survey on Mobile Edge Computing" "Wireless Edge Computing With Latency and Reliability Guarantees" at next week.
+2.Write a table for pre-review / Reference of the paper that have read before.
+
+
+
+
+Next meeting targets:
+1. talk more about the solution of MEC.
