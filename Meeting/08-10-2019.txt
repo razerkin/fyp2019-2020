@@ -1,0 +1,23 @@
+Date: 2019-10-08
+
+Member:
+Kin
+Prof. Wu
+
+
+Discussion Summary:
+Fifth meeting
+
+Report about the last paper reading, and get more two paper to read, study about model of MEC. 
+<<Mobile Edge Computing A Survey>>
+<<Wireless Edge  Computing With Latency and Reliability Guarantees>>
+
+Discuss the work about next two week:
+1.Report about the  paper reading.
+2.Continue to Write a table for pre-review / Reference of the paper that have read before.
+
+
+
+
+Next meeting targets:
+1. talk about those two paper and the compution model and communication model in MEC.

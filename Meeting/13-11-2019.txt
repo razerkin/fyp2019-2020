@@ -1,0 +1,22 @@
+Date: 2019-11-13
+
+Member:
+Kin
+Prof. Wu
+
+
+Discussion Summary:
+Seventh meeting
+
+Try to understand the second algorithm in that peper.
+
+Discuss the work about next two week:
+1.Try to run the code in PC.
+2.Try to translate the code in own programming language.
+
+
+
+
+Next meeting targets:
+1. Report the progress.
+2. talk about the difficultly of the work and try to slove it.

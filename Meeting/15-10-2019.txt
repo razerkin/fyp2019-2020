@@ -1,0 +1,23 @@
+Date: 2019-10-15
+
+Member:
+Kin
+Prof. Wu
+
+
+Discussion Summary:
+Sixth meeting
+
+Report about the last paper reading, and get one new paper and code base on non-orthogonal multiple access in MEC.
+<<Deisgn and implementation of edge computing algorithm based on non-orthogonal multiple access>>
+
+Discuss the work about next two week:
+1.Report about the  paper reading.
+2.Try to understand the code in the paper.
+
+
+
+
+Next meeting targets:
+1. Report the progress.
+2. talk about the code and the algorithm in that peper.

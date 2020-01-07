@@ -1,0 +1,21 @@
+Date: 2019-11-18
+
+Member:
+Kin
+Prof. Wu
+
+
+Discussion Summary:
+Eighth meeting
+
+Discuss what to do after we understand the code. Explain the formula about the energy consumption and time.
+
+Discuss the work about next two week:
+1.Continue to complete the paper reading summary
+2.Try to translate know the code about Simulated annealing algorithm.
+
+
+
+Next meeting targets:
+1. Report the progress.
+2. Analysis algorithm code.
