@@ -1,0 +1,22 @@
+Date: 2019-01-08
+
+Member:
+Kin
+Prof. Wu
+
+
+Discussion Summary:
+tenth meeting
+
+1.Show result and analysis the code. 
+2.Discuss how to do the interim report.
+
+Discuss the work about next two week:
+1.Finish the interim report
+2.Do the linear search algorithm simulation
+
+
+
+Next meeting targets:
+1. Report the progress.
+2. Show the simulation code.

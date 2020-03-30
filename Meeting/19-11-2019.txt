@@ -1,0 +1,21 @@
+Date: 2019-11-19
+
+
+Member:
+Kin
+Prof. Wu
+
+
+Discussion Summary:
+ninth meeting
+
+Complete the analysis of the CVX algorithm code.
+
+Discuss the work about next two week:
+1.CVX algorithm simulation
+
+
+
+Next meeting targets:
+1. Report the progress.
+2. Show the simulation code.
