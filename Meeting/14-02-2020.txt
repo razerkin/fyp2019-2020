@@ -1,0 +1,22 @@
+Date: 2020-02-14
+
+Member:
+Kin
+Prof. Wu
+
+
+Discussion Summary:
+No.12 meeting
+
+1.Show the UI of the first part（CVX+LS）
+2.Report the progress of learning the package for UI design.
+
+Discuss the work about next two week:
+1.code the SA
+2.continue to learn UI package.
+3.Summit the interim report.
+
+
+
+Next meeting targets:
+1. Report the progress.

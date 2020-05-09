@@ -1,0 +1,21 @@
+Date: 2020-03-11
+
+Member:
+Kin
+Prof. Wu
+
+
+Discussion Summary:
+No.14 meeting
+
+1.Show the result of SA algorithm.
+2.A3C algorithm.
+
+Discuss the work about next two week:
+1.Try to use A3C algorithm to solve problem.
+
+
+
+Next meeting targets:
+1. Report the progress.
+2. A3C

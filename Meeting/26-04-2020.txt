@@ -1,0 +1,20 @@
+Date: 2020-04-26
+
+Member:
+Kin
+Prof. Wu
+
+
+Discussion Summary:
+No.18 meeting
+
+1.Show the result of SA.
+2.Show the UI framework of SA+CVX part.
+
+Discuss the work about next two week:
+1.Continue to coding the UI.
+
+
+
+Next meeting targets:
+1. test the UI framework.

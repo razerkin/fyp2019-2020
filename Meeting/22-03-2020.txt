@@ -1,0 +1,20 @@
+Date: 2020-03-22
+
+Member:
+Kin
+Prof. Wu
+
+
+Discussion Summary:
+No.15 meeting
+
+1.Discuss the difficulties in A3C and the differences from the simulated annealing algorithm
+
+Discuss the work about next two week:
+1.Continue to code the SA part.
+
+
+
+Next meeting targets:
+1. Report the SA part coding progress
+2. Show the UI framework.

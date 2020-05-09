@@ -1,0 +1,20 @@
+Date: 2020-04-03
+
+Member:
+Kin
+Prof. Wu
+
+
+Discussion Summary:
+No.16 meeting
+
+1.Show the code of SA part.
+2.How to optimize the performance and make program better.
+
+Discuss the work about next two week:
+1.Finish the SA part coding.
+
+
+
+Next meeting targets:
+1. Show the result of SA.

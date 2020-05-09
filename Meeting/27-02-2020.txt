@@ -1,0 +1,22 @@
+Date: 2020-02-27
+
+Member:
+Kin
+Prof. Wu
+
+
+Discussion Summary:
+No.13 meeting
+
+1.Solve programming difficulties
+2.Try to find a better algorithm to solve the problem.
+
+Discuss the work about next two week:
+1.code the SA
+2.Design the UI framework.
+
+
+
+Next meeting targets:
+1. Report the progress.
+2. Simulated Annealing Algorithm in python.
