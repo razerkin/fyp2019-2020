@@ -1,9 +1,11 @@
 import numpy as np
 import cvxpy as cp
 import pandas as pd
-# import matplotlib.pyplot as plt
-import time as tii
+# import shutil
+# import time as tii
 from ast import literal_eval
+
+# import matplotlib.pyplot as plt
 # from PyQt5.QtWidgets import QApplication
 # from PyQt5.QtCore import QTimer
 
@@ -12,7 +14,7 @@ from ast import literal_eval
 class Vt(object):
 
     def __init__(self):
-        self.cvx_param = pd.read_csv('./CSV/Background/cvx_param.csv')
+        self.cvx_param = pd.read_csv('./CSV/Background/PARAM/cvx_param_3.csv')
         self.W = self.cvx_param['W'][0]
         self.n_0 = self.cvx_param['n_0'][0]  # noisePowerDensity
         self.Ui_text = literal_eval(self.cvx_param['Ui'][0])
@@ -25,24 +27,15 @@ class Vt(object):
         self.baseStationGain = literal_eval(self.cvx_param['baseStationGain'][0])
         self.sTotal = literal_eval(self.cvx_param['sTotal'][0])  # [5, 6, 7, 8, 9, 0]  # Total workload of each task
         self.timeMax = literal_eval(self.cvx_param['timeMax'][0])  # [2, 3, 4, 5, 6, 0]  # Max time can be using of each task
-    def vtmincvx(self, t=2, matchlist=None, plotcvx=False, workername=None):
-        if matchlist is None:
-            matchlist = np.array([4, 5, 3, 2, 1, 6])
+    def vtmincvx(self, t=4, matchlist=None, plotcvx=False, workername=None):
+        # if matchlist is None:
+        #     matchlist = np.array([4, 5, 3, 2, 1, 6])
         # else:
             # print(matchlist)
-        # W = 16  # channel bandwidth
-        # n_0 = 10 ** (-8)  # noisePowerDensity
         Ui = np.mat(np.delete(np.array(self.Ui_text), matchlist[-1] - 1))  # computing speed of each server
-        # UiLocal = 8  # computing speed of local device
-        # maxP = 0.5  # Power budget of Mobile User
-        # k = 0.08  # Architecture factor
-        # allBaseStationNumber = 6
-        # usingBaseStationNumber = 5  #each Task should has a base station
-        # userNumber = 1
         baseStationGain = self.baseStationGain.copy()
         baseStationGain[matchlist[-1] - 1] = ''
         baseStationGain.remove('')
-        # baseStationGain=[1.81850000000000e-07, 1.77930000000000e-07, 1.75990000000000e-07]
         baseStationGain.sort(reverse=True)  # Reverse sorting the gain of base stations
         sTotal = self.sTotal.copy()  # Total workload of each task
         timeMax = self.timeMax.copy()  # Max time can be using of each task
@@ -126,14 +119,15 @@ class Vt(object):
                 'time': tempTime,
                 'vt': prob.value
             }, index=[j], columns=['time', 'vt'])
-            status = pd.read_csv('./CSV/Background/status.csv',index_col=0)
-            cvx_edit = status.loc[workername]['cvx_edit']
-            while not cvx_edit:
-                tii.sleep(1)
-                status = pd.read_csv('./CSV/Background/status.csv',index_col=0)
-                cvx_edit = status.loc[workername]['cvx_edit']
+            # status = pd.read_csv('./CSV/Background/status.csv',index_col=0)
+            # cvx_edit = status.loc[workername]['cvx_edit']
+            # while not cvx_edit:
+            #     tii.sleep(1)
+            #     status = pd.read_csv('./CSV/Background/status.csv',index_col=0)
+            #     cvx_edit = status.loc[workername]['cvx_edit']
             dataframe.to_csv('./CSV/Background/CVX/' + workername + '_cvx.csv', sep=',', mode='a', header=False)
         if plotcvx:
+            print(vtMin)
             return (timePlot, vtPlot, optimalTime, vtMin)
         else:
             return (vtMin)

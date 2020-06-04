@@ -1,4 +1,4 @@
-from newtest.param import Ui_Dialog
+from param import Ui_Dialog
 from PyQt5.QtWidgets import QApplication, QDialog
 import pandas as pd
 import numpy as np
@@ -16,7 +16,7 @@ class ImgDisp(QDialog, Ui_Dialog):
         self.tasks_Number = 0
     def InitValue(self):
         #CVX_param
-        cvx_param = pd.read_csv('./CSV/Background/cvx_param.csv',sep=',')
+        cvx_param = pd.read_csv('./CSV/Background/PARAM/cvx_param.csv',sep=',')
         W = cvx_param['W'][0]  # channel bandwidth
         n_0 = cvx_param['n_0'][0]  # noisePowerDensity
         Ui_text = literal_eval(cvx_param['Ui'][0])
@@ -55,7 +55,7 @@ class ImgDisp(QDialog, Ui_Dialog):
         self.sTotal_Edit.setText(str(sTotal)[1:-1])
         self.timeMax_Edit.setText(str(timeMax)[1:-1])
         # #SA_param
-        sa_param = pd.read_csv('./CSV/Background/sa_param.csv')
+        sa_param = pd.read_csv('./CSV/Background/PARAM/sa_param.csv')
         sa_tmp = sa_param['tmp'][0]
         sa_tmpMin = sa_param['tmpMin'][0]
         sa_Max_step = sa_param['Max_step'][0]
@@ -96,8 +96,11 @@ class ImgDisp(QDialog, Ui_Dialog):
     def generateGain(self):
         self.StationGain = []
         for i in range(self.tasks_Number + 1):
-            self.StationGain.append(random.uniform(0.000000000000001e-06, 9.999999999999999e-06))
+            self.StationGain.append(random.uniform(1.100000000000001e-06, 9.999999999999999e-06))
+        self.StationGain = self.StationGain.sort(reverse=True)
         print(self.StationGain)
+        # 9.999999999999999
+        # 9.900000000000000
     def allpossible(self):
         baseStationNum = int(self.baseStationNum_Edit.text())
         allpossible = str(math.factorial(baseStationNum))
@@ -124,7 +127,7 @@ class ImgDisp(QDialog, Ui_Dialog):
             'allPossible': [math.factorial(baseStationNum)],
             'N_WORKERS': [nWorkers]
         })
-        sa_dataframe.to_csv('./CSV/Background/sa_param.csv', index=False, sep=',')
+        sa_dataframe.to_csv('./CSV/Background/PARAM/sa_param.csv', index=False, sep=',')
         #SA_param END
 
         #CVX_param
@@ -176,7 +179,7 @@ class ImgDisp(QDialog, Ui_Dialog):
             'sTotal': [sTotal],
             'timeMax': [timeMax]
         })
-        cvx_dataframe.to_csv('./CSV/Background/cvx_param.csv', index=False)
+        cvx_dataframe.to_csv('./CSV/Background/PARAM/cvx_param.csv', index=False)
 
 
 
